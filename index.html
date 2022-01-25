@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Educativo</title>
+	<link rel="stylesheet" href="styles.css"/>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    
+    <!-- Scripts --> 
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1 id="title">Quiz Educativo</h1>
+    </header>
+
+    <div id="interface">
+        <div id="main-menu">
+            <div id="main-menu-btns">
+                <button onclick="change_screen('game')">Jogar</button>
+                <button onclick="change_screen('credits')">Créditos</button>
+            </div>
+        
+            <div id="credits">
+                <button id="back-from-credits" onclick="change_screen('main-menu')">Voltar</button>
+                <div>
+                    <div class="person-credit">
+                        <figure>
+                            <img src="img/gabriel_sousa.jpg">
+                            <figcaption>José Gabriel de Sousa Silva</figcaption>
+                        </figure>
+                        <div class="person-info">
+                            <div>
+                                <h3>Educador</h3>
+                            </div>
+                            
+                            <ul>
+                                <li><p>Estudante do Bacharelado de Engenharia de Computação na UFPB</p></li>
+                                <li><p>Técnico de Manutenção e Suporte em Informática pelo IFPB</p></li>
+                            </ul>
+
+                            <div class="person-social">
+                                <button>
+                                    <a href="https://github.com/JGSS-GabrielSousa" target="_blank">
+                                        <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white">
+                                    </a>
+                                </button>
+                                <button>
+                                    <a href="https://www.linkedin.com/in/jgss-gabriel-sousa/" target="_blank">
+                                        <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white">
+                                    </a>
+                                </button>
+                                <button>
+                                    <a href="https://www.instagram.com/jgabriel.sousa/" target="_blank">
+                                        <img src="https://img.shields.io/badge/Instagram-DD2A7B?style=for-the-badge&logo=instagram&logoColor=white">
+                                    </a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="person-credit">
+                        <figure>
+                            <img src="img/maria_luisa.jpg">
+                            <figcaption>Maria Luísa Lopes Patriota</figcaption>
+                        </figure>
+                        <div class="person-info">
+                            <div>
+                                <h3>Desenvolvedora</h3>
+                            </div>
+                            
+                            <ul>
+                                <li><p>Estudante do Bacharelado em Ciências e Tecnologia na UFRN</p></li>
+                            </ul>
+
+                            <div class="person-social">
+                                <button>
+                                    <a target="_blank">
+                                        <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white">
+                                    </a>
+                                </button>
+                                <button>
+                                    <a target="_blank">
+                                        <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white">
+                                    </a>
+                                </button>
+                                <button>
+                                    <a target="_blank">
+                                        <img src="https://img.shields.io/badge/Instagram-DD2A7B?style=for-the-badge&logo=instagram&logoColor=white">
+                                    </a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,180 @@
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    background-color: #455e6c;
+    display: grid;
+    grid-template-areas:
+    ". logo ."
+    "sidenav content advert"
+    "sidenav footer advert"
+    "sidenav footer2 advert"
+    ;
+}
+
+header {
+    grid-area: logo;
+    margin: 20px;
+}
+
+button {
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 1px 2px 2px black;
+    font-size: 20px;
+    border-radius: 20px;
+    background-color: #E4DAD9;
+}
+
+button:hover{
+    background-image: linear-gradient(#E4DAD9, #b1a7a6);
+    cursor: pointer;
+    transform: translateY(-5px);
+}
+
+h1 {
+    width: 100%;
+    text-align: center;
+    text-shadow: 2px 0 0 black, -2px 0 0 black, 0 2px 0 black, 0 -2px 0 black, 4px 4px black, -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black;
+    color: #ff9b29;
+    font-size: 40px;
+    margin: 0;
+}
+
+h2 {
+    width: 100%;
+    text-align: center;
+    color: #ff9b29;
+    font-size: 36px;
+    text-shadow: 1px 0 0 black, -1px 0 0 black, 0 1px 0 black, 0 -1px 0 black, 1px 1px black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
+}
+
+h3 {
+    width: 100%;
+    text-align: center;
+    color: #ff9b29;    
+    text-shadow: 1px 0 0 black, -1px 0 0 black, 0 1px 0 black, 0 -1px 0 black, 1px 1px black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
+}
+
+figure {
+    display: grid;
+    justify-items: center;
+    width: 200px;
+}
+
+figcaption {
+    width: 100%;
+    text-align: center;
+    color: #ff9b29;
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 1px 0 0 black, -1px 0 0 black, 0 1px 0 black, 0 -1px 0 black, 1px 1px black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+p {
+    margin: 5px 0px 5px 0px;
+    font-weight: bold;
+    font-size: 14px;
+    white-space: pre-wrap;
+}
+
+a, a:visited, a:hover, a:active {
+    color: inherit;
+}
+
+.person-credit {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.person-credit img {
+    height: 150px;
+    width: 150px;
+    border-radius: 10%;
+    border: 1px solid;
+}
+.person-credit h3 {
+    font-size: 24px;
+}
+
+.person-info {
+    display: grid;
+    align-content: flex-start;
+    width: 100%;
+    height: 100%;
+}
+.person-info ul {
+    background-color: #e4dad9;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+}
+.person-info h3 {
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.person-social {
+    display: flex;
+}
+.person-social img{
+    height: 30px;
+    width: auto;
+    box-shadow: 2px 2px 5px;
+    cursor: pointer;
+}
+
+#interface {
+    justify-content: center;
+    width: 100%;
+    grid-area: content;
+}
+
+#main-menu {
+    margin-top: 30px;
+}
+#main-menu-btns {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+#main-menu-btns button {
+    width: 250px;
+    font-weight: bold;
+    margin: 20px;
+}
+#credits {
+    display: none;
+    justify-items: center;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+#back-from-credits {
+    font-weight: bold;
+}
+
+.person-social button{
+    background-color: transparent;
+    margin: 0px;
+    padding: 0px;
+    box-shadow: none;
+    border: none;
+    margin: 10px;
+}
+.person-social button:hover{
+    background-image: linear-gradient(transparent, transparent);
+}
+
+.no-select {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
