@@ -1,3 +1,3 @@
 # Quiz-Educativo
 
-https://malulpatriota.github.io/Quiz-Educativo/
+https://malulpatriota.github.io/Projeto-Quiz-Educativo/
