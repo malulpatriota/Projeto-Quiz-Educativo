@@ -15,7 +15,6 @@ body {
 
 header {
     grid-area: logo;
-    margin: 20px;
 }
 
 button {
@@ -23,6 +22,7 @@ button {
     margin: 10px;
     box-shadow: 1px 2px 2px black;
     font-size: 20px;
+    font-weight: bold;
     border-radius: 20px;
     background-color: #E4DAD9;
 }
@@ -39,18 +39,19 @@ h1 {
     text-shadow: 2px 0 0 black, -2px 0 0 black, 0 2px 0 black, 0 -2px 0 black, 4px 4px black, -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black;
     color: #ff9b29;
     font-size: 40px;
-    margin: 0;
 }
 
 h2 {
+    margin-top: auto;
     width: 100%;
     text-align: center;
     color: #ff9b29;
-    font-size: 36px;
+    font-size: 32px;
     text-shadow: 1px 0 0 black, -1px 0 0 black, 0 1px 0 black, 0 -1px 0 black, 1px 1px black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
 }
 
 h3 {
+    margin-top: auto;
     width: 100%;
     text-align: center;
     color: #ff9b29;    
@@ -87,7 +88,6 @@ a, a:visited, a:hover, a:active {
 
 .person-credit {
     display: flex;
-    align-items: flex-start;
     width: 100%;
 }
 
@@ -112,7 +112,6 @@ a, a:visited, a:hover, a:active {
     border-radius: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
-    width: 100%;
 }
 .person-info h3 {
     margin-bottom: 0px;
@@ -129,33 +128,125 @@ a, a:visited, a:hover, a:active {
     cursor: pointer;
 }
 
+.floating-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 1px 2px 2px black;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 25px 50px;
+    background-color: #2A2D34;
+    margin: 20px;
+    color: #ff9b29;
+    text-shadow: 1px 0 0 black, -1px 0 0 black, 0 1px 0 black, 0 -1px 0 black, 1px 1px black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
+}
+
 #interface {
     justify-content: center;
     width: 100%;
     grid-area: content;
 }
 
+#game-container{
+    display: none;
+    text-align: center;
+}
+
+#question h3 {
+    margin: 0px 0px 20px 0px;
+}
+#question img {
+    margin-bottom: 20px;
+}
+#question-options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+}
+
+#end-screen {
+    display: none;
+}
+
+.wrong {
+    background-color: #831e1e;
+}
+.wrong:hover {
+    background-image: linear-gradient(#831e1e, #831e1e);
+}
+
+.correct {
+    background-color: #14751d;
+}
+.correct:hover {
+    background-image: linear-gradient(#14751d, #14751d);
+}
+
 #main-menu {
     margin-top: 30px;
-}
-#main-menu-btns {
     display: grid;
     align-items: center;
     justify-items: center;
 }
-#main-menu-btns button {
+#main-menu button {
     width: 250px;
     font-weight: bold;
     margin: 20px;
 }
+
+#instructions {
+    display: none;
+    text-align: center;
+}
+#instructions p {
+    text-align: justify;
+    line-height: 1.5;
+    width: 100%;
+    margin: 10px;
+}
+
+#options {
+    display: none;
+    text-align: center;
+}
+#options input {
+    width: 75%;
+}
+#options p {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.option-container{
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
 #credits {
     display: none;
-    justify-items: center;
-    justify-content: space-around;
-    align-items: flex-start;
+    flex-direction: column;
+    align-items: center;
 }
-#back-from-credits {
-    font-weight: bold;
+
+#select-category {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+#select-category-options{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(175px, 0.5fr));
+    grid-gap: 20px;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: stretch;
+}
+#select-category-options button{
+    width: inherit;
 }
 
 .person-social button{
@@ -168,13 +259,4 @@ a, a:visited, a:hover, a:active {
 }
 .person-social button:hover{
     background-image: linear-gradient(transparent, transparent);
-}
-
-.no-select {
-    -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-    -khtml-user-select: none; /* Konqueror HTML */
-    -moz-user-select: none; /* Old versions of Firefox */
-    -ms-user-select: none; /* Internet Explorer/Edge */
-    user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
 }
